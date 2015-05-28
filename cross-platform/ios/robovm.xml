@@ -14,10 +14,6 @@
     <forceLinkClasses>
         <pattern>com.android.okhttp.HttpHandler</pattern>
         <pattern>com.android.org.conscrypt.OpenSSLProvider</pattern>
-        <pattern>org.apache.harmony.security.provider.cert.DRLCertFactory</pattern>
-        <pattern>org.apache.harmony.security.provider.crypto.CryptoProvider</pattern>
         <pattern>com.android.org.conscrypt.JSSEProvider</pattern>
-        <pattern>java.util.logging.ConsoleHandler</pattern>
-        <pattern>java.util.logging.SimpleFormatter</pattern>
     </forceLinkClasses>
 </config>
