@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rw5-ns-KcI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MyViewController-->
+        <scene sceneID="HF5-hW-DZA">
+            <objects>
+                <viewController title="MyViewController" id="Rw5-ns-KcI" customClass="MyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WrT-94-kTm"/>
+                        <viewControllerLayoutGuide type="bottom" id="GRf-jy-2iC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xOT-TG-81E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-2n-aTU">
+                                <rect key="frame" x="160" y="5" width="280" height="587"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="P8K-bL-nbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAJ-Gw-8zl">
+                                <rect key="frame" x="196" y="552" width="209" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Show next fortune!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="300" y="311" width="200" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clicked" destination="Rw5-ns-KcI" eventType="touchUpInside" id="aCH-Ws-MTg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6eT-2n-aTU" firstAttribute="bottom" secondItem="JAJ-Gw-8zl" secondAttribute="bottom" id="6dW-Yw-hMr"/>
+                            <constraint firstItem="GRf-jy-2iC" firstAttribute="top" secondItem="6eT-2n-aTU" secondAttribute="bottom" constant="8" symbolic="YES" id="Tza-bv-rAK"/>
+                            <constraint firstItem="6eT-2n-aTU" firstAttribute="centerX" secondItem="xOT-TG-81E" secondAttribute="centerX" id="ehn-Le-rAp"/>
+                            <constraint firstItem="6eT-2n-aTU" firstAttribute="top" secondItem="xOT-TG-81E" secondAttribute="topMargin" constant="5" id="mK5-12-F6O"/>
+                            <constraint firstItem="6eT-2n-aTU" firstAttribute="centerX" secondItem="JAJ-Gw-8zl" secondAttribute="centerX" id="x1z-G0-0Qw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="6eT-2n-aTU" id="BRp-KC-rUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MK6-Qu-SKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="507"/>
+        </scene>
+    </scenes>
+</document>
