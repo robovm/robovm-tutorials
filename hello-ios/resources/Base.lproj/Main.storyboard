@@ -46,23 +46,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OAC-XE-zTh">
-                                <rect key="frame" x="277" y="328" width="46" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQo-KC-6nN">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="biu-WU-RwE"/>
-                                        </constraints>
-                                        <state key="normal" title="Call"/>
-                                        <connections>
-                                            <action selector="clickedCall" destination="Rw5-ns-KcI" eventType="touchUpInside" id="tef-Ht-nB6"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <animations/>
-                            </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-ROBOVMZ" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBr-p5-x8i">
                                 <rect key="frame" x="197" y="212" width="206" height="30"/>
                                 <animations/>
@@ -72,15 +55,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQo-KC-6nN">
+                                <rect key="frame" x="197" y="328" width="206" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="clickedCall" destination="Rw5-ns-KcI" eventType="touchUpInside" id="tef-Ht-nB6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="JAJ-Gw-8zl" secondAttribute="centerY" id="Azx-fk-TQ9"/>
-                            <constraint firstItem="OAC-XE-zTh" firstAttribute="top" secondItem="JAJ-Gw-8zl" secondAttribute="bottom" constant="8" symbolic="YES" id="VWT-E9-LGa"/>
                             <constraint firstAttribute="centerY" secondItem="6eT-2n-aTU" secondAttribute="centerY" multiplier="2" id="ZYa-tH-0dQ"/>
-                            <constraint firstItem="OAC-XE-zTh" firstAttribute="centerX" secondItem="xOT-TG-81E" secondAttribute="centerX" id="haq-Wt-r4N"/>
+                            <constraint firstItem="UQo-KC-6nN" firstAttribute="centerX" secondItem="xOT-TG-81E" secondAttribute="centerX" id="cLa-8V-3Nu"/>
+                            <constraint firstItem="UQo-KC-6nN" firstAttribute="leading" secondItem="CBr-p5-x8i" secondAttribute="leading" id="f3f-xI-cRf"/>
                             <constraint firstAttribute="centerX" secondItem="JAJ-Gw-8zl" secondAttribute="centerX" id="hqe-pz-zAk"/>
+                            <constraint firstItem="UQo-KC-6nN" firstAttribute="top" secondItem="JAJ-Gw-8zl" secondAttribute="bottom" constant="8" symbolic="YES" id="laH-gd-6Md"/>
                             <constraint firstAttribute="centerX" secondItem="6eT-2n-aTU" secondAttribute="centerX" id="ll8-9H-VGW"/>
                             <constraint firstItem="JAJ-Gw-8zl" firstAttribute="top" secondItem="CBr-p5-x8i" secondAttribute="bottom" constant="38" id="lwB-hm-uOS"/>
                             <constraint firstItem="CBr-p5-x8i" firstAttribute="centerX" secondItem="xOT-TG-81E" secondAttribute="centerX" id="mUF-nJ-bdp"/>
